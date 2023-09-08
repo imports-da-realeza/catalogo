@@ -1,0 +1,31 @@
+header {
+      background-color: #fff;
+      height: 53px;
+      width: 80%;
+}
+
+.logo {
+      float: left;
+      height: 85px;
+      padding: 5px 0 0 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+      header {
+            height: 102px !important;
+      }
+}
+
+@media screen and (max-width: 575px) {
+      header {
+            height: 42px !important;
+      }
+}
+
+
+@media screen and (max-width: 374px) {
+      header {
+            height: 5px !important;
+      }
+}

@@ -1,0 +1,120 @@
+.banner {
+  background: url(../images/banner.png) no-repeat center center;
+  background-position: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-content {
+  text-align: center;
+  color: #fff;
+}
+
+.banner .banner-content .banner-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner .banner-content .banner-subtitle {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 374px) {
+  .banner {
+    background-size: 24rem;
+  }
+
+	.banner .banner-content .banner-title {
+		font-size: 2rem;
+	}
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 0.0001rem;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 575px) {
+  .banner {
+    background-size: 34rem;
+  }
+
+	.banner .banner-content .banner-title {
+		font-size: 3rem;
+	}
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .banner {
+    background-size: 48rem;
+  }
+
+	.banner .banner-content .banner-title {
+		font-size: 4rem;
+	}
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    background-size: 63rem;
+  }
+
+	.banner .banner-content .banner-title {
+		font-size: 5rem;
+	}
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    background-size: 76rem;
+  }
+
+  .banner .banner-content .banner-title {
+    font-size: 6rem;
+  }
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .banner {
+    background-size: 100rem;
+  }
+
+  .banner .banner-content .banner-title {
+    font-size: 7rem;
+  }
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 1601px) {
+  .banner {
+    background-size: cover;
+  }
+
+  .banner .banner-content .banner-title {
+    font-size: 8rem;
+  }
+
+	.banner .banner-content .banner-subtitle {
+		font-size: 2rem;
+	}
+}
