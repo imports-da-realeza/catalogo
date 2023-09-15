@@ -19,7 +19,7 @@ xmlHttp.onreadystatechange = function () {
 }
 
 
-xmlHttp.open("GET", "./db.json", true);
+xmlHttp.open("GET", "https://imports-da-realeza.github.io/catalogo/db.json", true);
 xmlHttp.send();
 
 
