@@ -19,7 +19,7 @@ xmlHttp.onreadystatechange = function () {
 }
 
 
-xmlHttp.open("GET", "../../db.json", true);
+xmlHttp.open("GET", "./db.json", true);
 xmlHttp.send();
 
 
