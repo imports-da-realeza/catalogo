@@ -9,7 +9,7 @@ xmlHttp.onreadystatechange = function () {
       for (let item of data) {
          item.marca = item.marca ? item.marca : '';
          item.descricao = item.descricao ? item.descricao : '';
-         const newProduto = new Produto(item?.nome, item?.descricao, item?.marca, item?.valor, item?.imagem);
+         const newProduto = new Produto(item?.nome, item?.descricao, item?.marca, item?.valor, item?.image);
          listaProdutos.push(newProduto);
       }
       console.log(listaProdutos);
@@ -19,7 +19,7 @@ xmlHttp.onreadystatechange = function () {
 }
 
 
-xmlHttp.open("GET", "https://github.com/imports-da-realeza/db-imports-realeza/blob/main/db.json", true);
+xmlHttp.open("GET", "https://raw.githubusercontent.com/imports-da-realeza/db-imports-realeza/main/db.json", true);
 xmlHttp.send();
 
 
@@ -42,7 +42,7 @@ const renderList = (listaProdutos) => {
       div2.style.marginBottom = '30px';
       div2.innerHTML = `
          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="${item.imagem}" class="card-img-top" alt="...">
             <div class="card-body">
                <p class="card-title fs-5 mb-2 fw-bolder text-uppercase">${item.nome}</p>
                <p class="card-text mb-2">${item.descricao}</p>
